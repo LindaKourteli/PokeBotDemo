@@ -66,4 +66,10 @@ public class CatchPokeWithoutOwnerTest {
 	public void testCatchPokeWithoutOwner() {
 		assertEquals("@huyvin24 @huyvin24 is my owner", cell.ask(new Tweet("huyvin24", "@Rattata Pokeball!")));
 	}
+	
+	@Test
+	public void testCatchPokeWithOwner() {
+		assertEquals("@huyvin24 @slydevis is my owner", cell.ask(new Tweet("huyvin24", "@Pikachu Pokeball!")));
+	}
+
 }
